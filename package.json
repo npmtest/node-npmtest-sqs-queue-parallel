@@ -1,1 +1,40 @@
-{     "devDependencies": {         "sqs-queue-parallel": "*",         "electron-lite": "kaizhu256/node-electron-lite#alpha",         "utility2": "kaizhu256/node-utility2#alpha"     },     "name":"npmtest-sqs-queue-parallel",     "homepage": "https://github.com/npmtest/node-npmtest-sqs-queue-parallel",     "repository": {         "type": "git",         "url": "https://github.com/npmtest/node-npmtest-sqs-queue-parallel.git"     },     "scripts": {         "build-ci": "utility2 shReadmeTest build_ci.sh"     },     "version": "0.0.1" }
+{
+    "author": "kai zhu <kaizhu256@gmail.com>",
+    "description": "#### test coverage for  [sqs-queue-parallel (v0.1.6)](https://github.com/bigluck/sqs-queue-parallel)  [![npm package](https://img.shields.io/npm/v/npmtest-sqs-queue-parallel.svg?style=flat-square)](https://www.npmjs.org/package/npmtest-sqs-queue-parallel) [![travis-ci.org build-status](https://api.travis-ci.org/npmtest/node-npmtest-sqs-queue-parallel.svg)](https://travis-ci.org/npmtest/node-npmtest-sqs-queue-parallel)",
+    "devDependencies": {
+        "electron-lite": "kaizhu256/node-electron-lite#alpha",
+        "sqs-queue-parallel": "*",
+        "utility2": "kaizhu256/node-utility2#alpha"
+    },
+    "engines": {
+        "node": ">=4.0"
+    },
+    "homepage": "https://github.com/npmtest/node-npmtest-sqs-queue-parallel",
+    "keywords": [
+        "coverage",
+        "test",
+        "sqs-queue-parallel"
+    ],
+    "license": "MIT",
+    "main": "lib.npmtest_sqs_queue_parallel.js",
+    "name": "npmtest-sqs-queue-parallel",
+    "nameAlias": "npmtest_sqs_queue_parallel",
+    "nameOriginal": "npmtest-sqs-queue-parallel",
+    "os": [
+        "darwin",
+        "linux"
+    ],
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/npmtest/node-npmtest-sqs-queue-parallel.git"
+    },
+    "scripts": {
+        "build-ci": "utility2 shReadmeTest build_ci.sh",
+        "env": "env",
+        "heroku-postbuild": "npm install \"kaizhu256/node-utility2#alpha\" && utility2 shDeployHeroku",
+        "postinstall": "[ ! -f npm_scripts.sh ] || ./npm_scripts.sh postinstall",
+        "start": "PORT=${PORT:-8080} utility2 start test.js",
+        "test": "(set -e; export PORT=$(utility2 shServerPortRandom); utility2 test test.js)"
+    },
+    "version": "0.0.1"
+}
