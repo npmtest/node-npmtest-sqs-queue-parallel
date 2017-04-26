@@ -1,6 +1,6 @@
 # npmtest-sqs-queue-parallel
 
-#### test coverage for  [sqs-queue-parallel (v0.1.6)](https://github.com/bigluck/sqs-queue-parallel)  [![npm package](https://img.shields.io/npm/v/npmtest-sqs-queue-parallel.svg?style=flat-square)](https://www.npmjs.org/package/npmtest-sqs-queue-parallel) [![travis-ci.org build-status](https://api.travis-ci.org/npmtest/node-npmtest-sqs-queue-parallel.svg)](https://travis-ci.org/npmtest/node-npmtest-sqs-queue-parallel)
+#### basic test coverage for  [sqs-queue-parallel (v0.1.6)](https://github.com/bigluck/sqs-queue-parallel)  [![npm package](https://img.shields.io/npm/v/npmtest-sqs-queue-parallel.svg?style=flat-square)](https://www.npmjs.org/package/npmtest-sqs-queue-parallel) [![travis-ci.org build-status](https://api.travis-ci.org/npmtest/node-npmtest-sqs-queue-parallel.svg)](https://travis-ci.org/npmtest/node-npmtest-sqs-queue-parallel)
 
 #### Create a poll of Amazon SQS queue watchers and each one can receive 1+ messages
 
@@ -10,7 +10,7 @@
 |--:|:--|
 | coverage : | [![istanbul-coverage](https://npmtest.github.io/node-npmtest-sqs-queue-parallel/build/coverage.badge.svg)](https://npmtest.github.io/node-npmtest-sqs-queue-parallel/build/coverage.html/index.html)|
 | test-report : | [![test-report](https://npmtest.github.io/node-npmtest-sqs-queue-parallel/build/test-report.badge.svg)](https://npmtest.github.io/node-npmtest-sqs-queue-parallel/build/test-report.html)|
-| build-artifacts : | [![build-artifacts](https://npmtest.github.io/node-npmtest-sqs-queue-parallel/glyphicons_144_folder_open.png)](https://github.com/npmtest/node-npmtest-sqs-queue-parallel/tree/gh-pages/build)|
+| test-server-github : | [![github.com test-server](https://npmtest.github.io/node-npmtest-sqs-queue-parallel/GitHub-Mark-32px.png)](https://npmtest.github.io/node-npmtest-sqs-queue-parallel/build/app/index.html) | | build-artifacts : | [![build-artifacts](https://npmtest.github.io/node-npmtest-sqs-queue-parallel/glyphicons_144_folder_open.png)](https://github.com/npmtest/node-npmtest-sqs-queue-parallel/tree/gh-pages/build)|
 
 - [https://npmtest.github.io/node-npmtest-sqs-queue-parallel/build/coverage.html/index.html](https://npmtest.github.io/node-npmtest-sqs-queue-parallel/build/coverage.html/index.html)
 
@@ -90,7 +90,8 @@
     "scripts": {
         "build": "grunt dist"
     },
-    "version": "0.1.6"
+    "version": "0.1.6",
+    "bin": {}
 }
 ```
 
